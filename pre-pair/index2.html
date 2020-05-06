@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>React'ing to Sally</title>
 </head>
+
 <body>
 
   <div id="root"></div>
 
   <hr>
 
-  <header>
-    <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Photo of Sally Student" width="134">
-    <h1>Sally Student</h1>
-  </header>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-  <nav>
-    <ul>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <script type="text/babel">
+    function App() {
+      return (
+        <div>
+          <header>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+              alt="Photo of Sally Student"
+              width="134"
+            />
+            <h1>Sally Student</h1>
+          </header>
 
-  <main>
-    <section id="experience">
-      <h2>Experience</h2>
-      <h3>Interaction Designer</h3>
-      <h4>AKQA</h4>
-      <p>2018-Present</p>
-      <p>Duties included: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <h3>Junior Interaction Designer</h3>
-      <h4>R/GA</h4>
-      <p>2017-2018</p>
-      <p>Duties included: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </section>
+          <nav>
+            <ul>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
 
-    <section id="education">
-      <h2>Education</h2>
-      <h3>San Francisco Art Institute</h3>
-      <p>2016</p>
-      <p>Post-Baccalaureate, New Genres</p>
-      <h3>Middlebury College</h3>
-      <p>2015</p>
-      <p>Bachelors, Humanities & Liberal Arts</p>
-    </section>
+          <main>
+            <section id="experience">
+              <h2>Experience</h2>
+              <h3>Interaction Designer</h3>
+              <h4>AKQA</h4>
+              <p>2018-Present</p>
+              <p>
+                Duties included: Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+          </p>
+              <h3>Junior Interaction Designer</h3>
+              <h4>R/GA</h4>
+              <p>2017-2018</p>
+              <p>
+                Duties included: Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+          </p>
+            </section>
 
-    <h2>Contact</h2>
-    <address id="contact">
-      <ul>
-        <li><b>Email address:</b> <a href="mailto:sallystudent@gmail.com?subject=Hi%20Sally!" target="_blank">sallystudent@gmail.com</a></li>
-        <li><b>Phone Number:</b> (650) 555-3452</li>
-      </ul>
-    </address>
-  </main>
+            <section id="education">
+              <h2>Education</h2>
+              <h3>San Francisco Art Institute</h3>
+              <p>2016</p>
+              <p>Post-Baccalaureate, New Genres</p>
+              <h3>Middlebury College</h3>
+              <p>2015</p>
+              <p>Bachelors, Humanities & Liberal Arts</p>
+            </section>
 
-<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+            <h2>Contact</h2>
+            <address id="contact">
+              <ul>
+                <li>
+                  <b>Email address:</b>{" "}
+                  <a
+                    href="mailto:sallystudent@gmail.com?subject=Hi%20Sally!"
+                    target="_blank"
+                  >
+                    sallystudent@gmail.com
+              </a>
+                </li>
+                <li>
+                  <b>Phone Number:</b> (650) 555-3452
+            </li>
+              </ul>
+            </address>
+          </main>
+        </div>
+      );
+    }
 
-<script type="text/babel" src="script2.js"></script>
+    ReactDOM.render(<App />, document.querySelector("#root"));
+  </script>
 
 </body>
+
 </html>
